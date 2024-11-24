@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Cửa hàng thời trang 2hand với các sản phẩm chất lượng, giá cả hợp lý. Khám phá ngay!">
-    <title>Thời Trang 2Hand</title>
+    <title>[Tên Cửa Hàng] – Thời Trang 2 Hand Độc Đáo, Tiết Kiệm & Bền Vững</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-color: #f4f4f9;
+            background-color: #f8f8f8;
+            color: #333;
         }
         header {
             background-color: #222;
-            color: #fff;
-            padding: 20px 0;
+            color: white;
+            padding: 30px 0;
             text-align: center;
         }
         header h1 {
-            font-size: 2.5em;
+            font-size: 3em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
         }
         .hero {
             background-image: url('https://via.placeholder.com/1600x800?text=Th%E1%BB%9Di+Trang+2hand');
@@ -32,37 +37,42 @@
             padding-top: 150px;
         }
         .hero h2 {
-            font-size: 2em;
+            font-size: 2.5em;
             margin-bottom: 20px;
         }
         .hero p {
-            font-size: 1.2em;
+            font-size: 1.5em;
+            margin-bottom: 20px;
         }
         .btn {
             background-color: #ff9900;
-            padding: 10px 20px;
+            padding: 15px 30px;
             color: white;
             font-size: 1.2em;
             text-decoration: none;
             border-radius: 5px;
+            margin-top: 10px;
         }
         .features {
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
             margin: 50px 0;
+            padding: 0 20px;
         }
         .feature {
             background-color: white;
             border: 1px solid #ddd;
             padding: 20px;
-            width: 30%;
+            width: 22%;
+            margin-bottom: 20px;
             text-align: center;
             border-radius: 8px;
         }
         .feature img {
             width: 80%;
             border-radius: 8px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
         .feature h3 {
             color: #333;
@@ -77,55 +87,120 @@
             color: #ff9900;
             text-decoration: none;
         }
+        .cta {
+            text-align: center;
+            background-color: #fff;
+            padding: 40px 0;
+            margin: 40px 0;
+        }
+        .cta h2 {
+            font-size: 2.5em;
+        }
+        .cta p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        .faq {
+            background-color: #f4f4f4;
+            padding: 30px;
+            margin-top: 50px;
+        }
+        .faq h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+        }
+        .faq-item h3 {
+            color: #ff9900;
+            margin-bottom: 5px;
+        }
+        .faq-item p {
+            font-size: 1.1em;
+        }
     </style>
 </head>
 <body>
 
-    <!-- Header Section -->
+    <!-- Header -->
     <header>
-        <h1>Thời Trang 2Hand</h1>
-        <p>Chất lượng tuyệt vời, giá cả phải chăng!</p>
+        <h1>[Tên Cửa Hàng]</h1>
+        <p>Thời Trang 2 Hand Độc Đáo, Tiết Kiệm & Bền Vững</p>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h2>Khám Phá Bộ Sưu Tập Thời Trang 2Hand</h2>
-        <p>Đầy đủ các sản phẩm thời trang, từ quần áo đến phụ kiện, với giá cực kỳ ưu đãi.</p>
+        <h2>Khám Phá Phong Cách Cá Nhân Của Bạn Với Những Món Đồ Thời Trang 2 Hand Cao Cấp</h2>
+        <p>Sắm Đồ Cũ – Mới Nhưng Chất Lượng Như Mới</p>
         <a href="#shop-now" class="btn">Mua Ngay</a>
     </section>
 
     <!-- Features Section -->
     <section class="features">
         <div class="feature">
-            <img src="https://via.placeholder.com/300" alt="Áo 2hand">
-            <h3>Áo Thời Trang</h3>
-            <p>Áo thun, áo khoác, mọi thứ bạn cần cho bộ sưu tập thời trang của mình.</p>
+            <img src="https://via.placeholder.com/300" alt="Áo Thun Nam Tinh Tế">
+            <h3>Áo Thun Nam Tinh Tế</h3>
+            <p>Mẫu áo thun trắng cổ điển, dễ phối đồ, chất liệu cotton mềm mại</p>
+            <p><strong>Giá: 200,000đ</strong></p>
+            <a href="#shop-now" class="btn">Mua Ngay</a>
         </div>
         <div class="feature">
-            <img src="https://via.placeholder.com/300" alt="Quần 2hand">
-            <h3>Quần & Váy</h3>
-            <p>Quần jean, quần tây, váy xinh xắn cho mọi dịp.</p>
+            <img src="https://via.placeholder.com/300" alt="Váy Maxi Nữ Thanh Lịch">
+            <h3>Váy Maxi Nữ Thanh Lịch</h3>
+            <p>Váy maxi dài, phù hợp cho mọi dịp, dễ dàng kết hợp với phụ kiện</p>
+            <p><strong>Giá: 350,000đ</strong></p>
+            <a href="#shop-now" class="btn">Mua Ngay</a>
         </div>
         <div class="feature">
-            <img src="https://via.placeholder.com/300" alt="Phụ kiện 2hand">
-            <h3>Phụ Kiện</h3>
-            <p>Những phụ kiện tinh tế như túi xách, kính mắt, mũ nón để làm mới phong cách của bạn.</p>
+            <img src="https://via.placeholder.com/300" alt="Quần Jean Skinny Chính Hãng">
+            <h3>Quần Jean Skinny Chính Hãng</h3>
+            <p>Quần jean dáng skinny, mang lại vẻ ngoài hiện đại, thoải mái</p>
+            <p><strong>Giá: 280,000đ</strong></p>
+            <a href="#shop-now" class="btn">Mua Ngay</a>
+        </div>
+        <div class="feature">
+            <img src="https://via.placeholder.com/300" alt="Áo Khoác Dạ 2 Màu">
+            <h3>Áo Khoác Dạ 2 Màu</h3>
+            <p>Áo khoác dạ sang trọng, giữ ấm mùa đông, phong cách vượt thời gian</p>
+            <p><strong>Giá: 450,000đ</strong></p>
+            <a href="#shop-now" class="btn">Mua Ngay</a>
         </div>
     </section>
 
     <!-- Call to Action -->
-    <section id="shop-now" style="text-align: center; padding: 50px 0; background-color: #fff;">
-        <h2>Đừng bỏ lỡ các ưu đãi tuyệt vời</h2>
-        <p>Khám phá ngay các bộ sưu tập thời trang 2hand của chúng tôi!</p>
-        <a href="https://your-store-link.com" class="btn">Mua Ngay</a>
+    <section id="shop-now" class="cta">
+        <h2>Hãy Khám Phá Bộ Sưu Tập Của Chúng Tôi Ngay Hôm Nay!</h2>
+        <p>Đừng bỏ lỡ cơ hội sở hữu những món đồ 2hand độc đáo và chất lượng.</p>
+        <a href="#shop-now" class="btn">Mua Ngay</a>
+        <a href="#shop-now" class="btn">Xem Thêm Sản Phẩm</a>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>Câu Hỏi Thường Gặp</h2>
+        <div class="faq-item">
+            <h3>Làm thế nào để đảm bảo chất lượng sản phẩm?</h3>
+            <p>Mỗi sản phẩm đều được kiểm tra và vệ sinh cẩn thận trước khi bán. Chúng tôi chỉ bán các món đồ còn mới, không bị hư hại.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Có thể trả hàng không?</h3>
+            <p>Nếu sản phẩm không đúng mô tả, bạn có thể trả lại trong vòng 7 ngày.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Phí vận chuyển là bao nhiêu?</h3>
+            <p>Chúng tôi cung cấp miễn phí vận chuyển cho đơn hàng trên 500,000đ. Đơn hàng dưới mức này sẽ có phí vận chuyển cố định.</p>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Thời Trang 2Hand. Tất cả các quyền được bảo lưu.</p>
+        <p>&copy; 2024 [Tên Cửa Hàng]. Tất cả các quyền được bảo lưu.</p>
         <p><a href="mailto:contact@yourstore.com">Liên hệ với chúng tôi</a></p>
     </footer>
 
 </body>
 </html>
+
 
