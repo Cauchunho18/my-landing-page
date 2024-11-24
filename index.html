@@ -1,205 +1,238 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cửa hàng thời trang 2hand với các sản phẩm chất lượng, giá cả hợp lý. Khám phá ngay!">
-    <title>[Tên Cửa Hàng] – Thời Trang 2 Hand Độc Đáo, Tiết Kiệm & Bền Vững</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #f8f8f8;
-            color: #333;
-        }
-        header {
-            background-color: #222;
-            color: white;
-            padding: 30px 0;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 3em;
-        }
-        header p {
-            font-size: 1.2em;
-            margin-top: 10px;
-        }
-        .hero {
-            background-image: url('shop-secondhand-tai-sai-gon-106389.jpg')?raw=true
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            color: white;
-            text-align: center;
-            padding-top: 150px;
-        }
-        .hero h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        .hero p {
-            font-size: 1.5em;
-            margin-bottom: 20px;
-        }
-        .btn {
-            background-color: #ff9900;
-            padding: 15px 30px;
-            color: white;
-            font-size: 1.2em;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-        .features {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin: 50px 0;
-            padding: 0 20px;
-        }
-        .feature {
-            background-color: white;
-            border: 1px solid #ddd;
-            padding: 20px;
-            width: 22%;
-            margin-bottom: 20px;
-            text-align: center;
-            border-radius: 8px;
-        }
-        .feature img {
-            width: 80%;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
-        .feature h3 {
-            color: #333;
-        }
-        footer {
-            background-color: #222;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        footer a {
-            color: #ff9900;
-            text-decoration: none;
-        }
-        .cta {
-            text-align: center;
-            background-color: #fff;
-            padding: 40px 0;
-            margin: 40px 0;
-        }
-        .cta h2 {
-            font-size: 2.5em;
-        }
-        .cta p {
-            font-size: 1.5em;
-            margin-bottom: 20px;
-        }
-        .faq {
-            background-color: #f4f4f4;
-            padding: 30px;
-            margin-top: 50px;
-        }
-        .faq h2 {
-            text-align: center;
-            font-size: 2em;
-            margin-bottom: 30px;
-        }
-        .faq-item {
-            margin-bottom: 15px;
-        }
-        .faq-item h3 {
-            color: #ff9900;
-            margin-bottom: 5px;
-        }
-        .faq-item p {
-            font-size: 1.1em;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cửa Hàng Thời Trang 2 Hand</title>
+  <style>
+    /* Cơ bản - Reset margin và padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-image: url('https://github.com/<your-username>/<your-repository-name>/blob/main/images/background.jpg?raw=true');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    /* Phần Bộ sưu tập sản phẩm */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin: 30px 0;
+      padding: 0 10%;
+    }
+
+    .product {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product h2 {
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+
+    .product p {
+      font-size: 1.2rem;
+      color: #888;
+      margin-bottom: 20px;
+    }
+
+    .product button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      border-radius: 5px;
+    }
+
+    .product button:hover {
+      background-color: #45a049;
+    }
+
+    /* Phần lý do chọn chúng tôi */
+    .why-choose {
+      background-color: #fff;
+      padding: 50px 10%;
+      text-align: center;
+    }
+
+    .why-choose h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #333;
+    }
+
+    .why-choose ul {
+      list-style: none;
+    }
+
+    .why-choose li {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    /* Phần Đánh giá khách hàng */
+    .reviews {
+      background-color: #fafafa;
+      padding: 50px 10%;
+      text-align: center;
+    }
+
+    .reviews h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .review {
+      display: inline-block;
+      width: 30%;
+      margin: 10px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .review p {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .review h3 {
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    /* Phần liên hệ */
+    .contact {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 40px 10%;
+    }
+
+    .contact h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
+  <!-- Header -->
+  <header>
+    <h1>Thời Trang 2 Hand Cao Cấp</h1>
+  </header>
 
-    <!-- Header -->
-    <header>
-        <h1>[Tên Cửa Hàng]</h1>
-        <p>Thời Trang 2 Hand Độc Đáo, Tiết Kiệm & Bền Vững</p>
-    </header>
+  <!-- Bộ Sưu Tập -->
+  <section class="products">
+    <div class="product">
+      <img src="https://github.com/<your-username>/<your-repository-name>/blob/main/images/ao-thun.jpg?raw=true" alt="Áo Thun Nam">
+      <h2>Áo Thun Nam</h2>
+      <p>Chất liệu cotton, thoáng mát, dễ phối đồ.</p>
+      <button>Mua Ngay</button>
+    </div>
+    <div class="product">
+      <img src="https://github.com/<your-username>/<your-repository-name>/blob/main/images/vay-maxi.jpg?raw=true" alt="Váy Maxi">
+      <h2>Váy Maxi Nữ</h2>
+      <p>Thanh lịch, dễ dàng kết hợp với phụ kiện.</p>
+      <button>Mua Ngay</button>
+    </div>
+    <div class="product">
+      <img src="https://github.com/<your-username>/<your-repository-name>/blob/main/images/quan-jean.jpg?raw=true" alt="Quần Jean Skinny">
+      <h2>Quần Jean Skinny</h2>
+      <p>Dáng chuẩn, thoải mái và hiện đại.</p>
+      <button>Mua Ngay</button>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h2>Khám Phá Phong Cách Cá Nhân Của Bạn Với Những Món Đồ Thời Trang 2 Hand Cao Cấp</h2>
-        <p>Sắm Đồ Cũ – Mới Nhưng Chất Lượng Như Mới</p>
-        <a href="#shop-now" class="btn">Mua Ngay</a>
-    </section>
+  <!-- Lý Do Chọn Chúng Tôi -->
+  <section class="why-choose">
+    <h2>Lý Do Chọn Thời Trang 2 Hand</h2>
+    <ul>
+      <li>Chất Lượng Như Mới: Tất cả sản phẩm đều được kiểm tra và tân trang kỹ càng.</li>
+      <li>Giá Cả Hợp Lý: Mua sắm tiết kiệm mà vẫn sở hữu món đồ thời trang chất lượng.</li>
+      <li>Bảo Vệ Môi Trường: Hỗ trợ giảm thiểu rác thải thời trang.</li>
+      <li>Phong Cách Độc Đáo: Sở hữu những món đồ không đụng hàng.</li>
+    </ul>
+  </section>
 
-    <!-- Features Section -->
-    <section class="features">
-        <div class="feature">
-            <img src=áo thun 1.webp="Áo Thun Nam Tinh Tế">?raw=true
-            <h3>Áo Thun Nam Tinh Tế</h3>
-            <p>Mẫu áo thun trắng cổ điển, dễ phối đồ, chất liệu cotton mềm mại</p>
-            <p><strong>Giá: 200,000đ</strong></p>
-            <a href="#shop-now" class="btn">Mua Ngay</a>
-        </div>
-        <div class="feature">
-            <img src="https://via.placeholder.com/300" alt="Váy Maxi Nữ Thanh Lịch">
-            <h3>Váy Maxi Nữ Thanh Lịch</h3>
-            <p>Váy maxi dài, phù hợp cho mọi dịp, dễ dàng kết hợp với phụ kiện</p>
-            <p><strong>Giá: 350,000đ</strong></p>
-            <a href="#shop-now" class="btn">Mua Ngay</a>
-        </div>
-        <div class="feature">
-            <img src="https://via.placeholder.com/300" alt="Quần Jean Skinny Chính Hãng">
-            <h3>Quần Jean Skinny Chính Hãng</h3>
-            <p>Quần jean dáng skinny, mang lại vẻ ngoài hiện đại, thoải mái</p>
-            <p><strong>Giá: 280,000đ</strong></p>
-            <a href="#shop-now" class="btn">Mua Ngay</a>
-        </div>
-        <div class="feature">
-            <img src="https://via.placeholder.com/300" alt="Áo Khoác Dạ 2 Màu">
-            <h3>Áo Khoác Dạ 2 Màu</h3>
-            <p>Áo khoác dạ sang trọng, giữ ấm mùa đông, phong cách vượt thời gian</p>
-            <p><strong>Giá: 450,000đ</strong></p>
-            <a href="#shop-now" class="btn">Mua Ngay</a>
-        </div>
-    </section>
+  <!-- Đánh giá khách hàng -->
+  <section class="reviews">
+    <h2>Đánh Giá Từ Khách Hàng</h2>
+    <div class="review">
+      <p>"Tôi rất hài lòng với chất lượng sản phẩm. Đồ đẹp như mới!"</p>
+      <h3>Linh</h3>
+    </div>
+    <div class="review">
+      <p>"Áo khoác 2 hand cực kỳ đẹp và bền. Chắc chắn tôi sẽ mua thêm."</p>
+      <h3>Tùng</h3>
+    </div>
+    <div class="review">
+      <p>"Dịch vụ tốt, sản phẩm đa dạng. Tôi rất thích mua sắm ở đây!"</p>
+      <h3>Mai</h3>
+    </div>
+  </section>
 
-    <!-- Call to Action -->
-    <section id="shop-now" class="cta">
-        <h2>Hãy Khám Phá Bộ Sưu Tập Của Chúng Tôi Ngay Hôm Nay!</h2>
-        <p>Đừng bỏ lỡ cơ hội sở hữu những món đồ 2hand độc đáo và chất lượng.</p>
-        <a href="#shop-now" class="btn">Mua Ngay</a>
-        <a href="#shop-now" class="btn">Xem Thêm Sản Phẩm</a>
-    </section>
+  <!-- Liên hệ -->
+  <section class="contact">
+    <h2>Liên Hệ Với Chúng Tôi</h2>
+    <p>Email: <a href="mailto:info@thoidong2hand.com" style="color: #fff;">info@thoidong2hand.com</a></p>
+    <p>Hotline: 0987 654 321</p>
+  </section>
 
-    <!-- FAQ Section -->
-    <section class="faq">
-        <h2>Câu Hỏi Thường Gặp</h2>
-        <div class="faq-item">
-            <h3>Làm thế nào để đảm bảo chất lượng sản phẩm?</h3>
-            <p>Mỗi sản phẩm đều được kiểm tra và vệ sinh cẩn thận trước khi bán. Chúng tôi chỉ bán các món đồ còn mới, không bị hư hại.</p>
-        </div>
-        <div class="faq-item">
-            <h3>Có thể trả hàng không?</h3>
-            <p>Nếu sản phẩm không đúng mô tả, bạn có thể trả lại trong vòng 7 ngày.</p>
-        </div>
-        <div class="faq-item">
-            <h3>Phí vận chuyển là bao nhiêu?</h3>
-            <p>Chúng tôi cung cấp miễn phí vận chuyển cho đơn hàng trên 500,000đ. Đơn hàng dưới mức này sẽ có phí vận chuyển cố định.</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 [Tên Cửa Hàng]. Tất cả các quyền được bảo lưu.</p>
-        <p><a href="mailto:contact@yourstore.com">Liên hệ với chúng tôi</a></p>
-    </footer>
-
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Thời Trang 2 Hand. Tất cả quyền lợi được bảo vệ.</p>
+  </footer>
 </body>
 </html>
 
